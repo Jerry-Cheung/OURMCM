@@ -51,71 +51,109 @@ keyword1; keyword2
 \section{Introduction}
 \subsection{Background}
 
-\lipsum[2]
-\begin{itemize}
-\item minimizes the discomfort to the hands, or
-\item maximizes the outgoing velocity of the ball.
-\end{itemize}
-We focus exclusively on the second definition.
+Lewis Mumford, a famous sociologist and literary critic,
+once said in a metaphorical manner, ``Adding highway lanes
+to deal with traffic congestion is like loosening your
+belt to cure obesity.`` Fortunately, he did not experience
+the worse congestion around today`s highway toll plaza.
 
-\begin{itemize}
-\item the initial velocity and rotation of the ball,
-\item the initial velocity and rotation of the bat,
-\item the relative position and orientation of the bat and ball, and
-\item the force over time that the hitter hands applies on the handle.
-\end{itemize}
-\lipsum[3]
-\begin{itemize}
-\item the angular velocity of the bat,
-\item the velocity of the ball, and
-\item the position of impact along the bat.
-\end{itemize}
-\lipsum[4]
-\emph{center of percussion} [Brody 1986], \lipsum[5]
+Currently, with roaring number of vehicles, rising
+construction costs and constrained available areas,
+traffic jam becomes more and more serious but future
+toll-plaza construction opportunities are limited to
+improve this situation markedly. Figure 1 shows the
+congestion in the toll plaza near Tappan Zee Bridge.
 
-\begin{Theorem} \label{thm:latex}
-\LaTeX
-\end{Theorem}
-\begin{Lemma} \label{thm:tex}
-\TeX .
-\end{Lemma}
-\begin{proof}
-The proof of theorem.
-\end{proof}
-
-\subsection{Other Assumptions}
-\lipsum[6]
-\begin{itemize}
-\item
-\item
-\item
-\item
-\end{itemize}
-
-\lipsum[7]
-
-\section{Analysis of the Problem}
 \begin{figure}[h]
 \small
 \centering
-\includegraphics[width=12cm]{mcmthesis-aaa.eps}
-\caption{aa} \label{fig:aa}
+\includegraphics[width=10cm]{figure1}
+\caption{Toll plaza congestion}\label{fig1}
 \end{figure}
 
-\lipsum[8] \eqref{aa}
-\begin{equation}
-a^2 \label{aa}
-\end{equation}
+Subject to the constraints referred above, neither
+increasing highway lanes nor building more tollbooths
+seems practical enough to relieve traffic jam around a
+toll plaza nowadays, particularly for some heavily-traveled
+ roads such as the Garden State Parkway, New Jersey.
+ Therefore, looking for some innovative design improvements
+  on the geometric parameters of the extent toll plaza
+  is an effective solution.
 
-\[
-  \begin{pmatrix}{*{20}c}
-  {a_{11} } & {a_{12} } & {a_{13} }  \\
-  {a_{21} } & {a_{22} } & {a_{23} }  \\
-  {a_{31} } & {a_{32} } & {a_{33} }  \\
-  \end{pmatrix}
-  = \frac{{Opposite}}{{Hypotenuse}}\cos ^{ - 1} \theta \arcsin \theta
-\]
-\lipsum[9]
+
+\subsection{Restatement of the Problem}
+In this paper, we are required to explore if there is a
+better-than-ever toll plaza model with specific shape,
+size, and merging pattern. In this model, the prerequisite
+is that vehicles fan in from B tollbooth egress lanes down
+to L (B\textgreater L) lanes of traffic (i.e., the number of both
+tollbooths and the lanes after merging are fixed). We aim
+to construct a model that can optimize the arrangement
+according to the following conditions.
+
+\begin{itemize}
+\item Enhance the capability of the accident prevention(A).
+\item Maximize the throughput(T).
+\item Minimize the cost of the land and road
+construction(C).
+\end{itemize}
+
+Through our analysis, we determine if there are better
+solutions than any toll plaza in common use. Afterwards,
+the performance of our solution in light and heavy traffic
+and other various situations along with corresponding
+sensitivity analysis is discussed.
+
+
+\section{Notations}
+
+\section{Model 1: The Traffic Throughput Model}
+\subsection{Overview}
+We manage to design two sub-models to analyze and
+calculate the maximum throughput in three parts
+(i.e., the approach zone, the tollbooth area, and
+the departure zone) of the toll plaza. And we define
+this throughput as $Q_{1max}$ and $Q_{2max}$ together,
+$Q_{3max}$ respectively. $Q_{1max}$ and $Q_{2max}$ can
+be viewed as the properties of upstream, while $Q_{3max}$
+ is for downstream. We assume corresponding ideal
+ conditions to apply on respective calculation, and
+ related assumptions will be displayed in the following
+ chapters. In view of the Buckets Effect, the overall
+ the maximal traffic flow $Q_{max}$ is determined by
+ the minimum among the three values, that is:
+\[{Q_{\max }} = \min \left\{ {{Q_{1\max }},{Q_{2\max }},{Q_{3\max }}} \right\}\]
+Figure 2 illustrates the schematic diagram of the whole.
+
+\begin{figure}[h]
+\small
+\centering
+\includegraphics[width=13cm]{figure2}
+\caption{the schematic diagram of the whole}\label{fig2}
+\end{figure}
+%此处的figure2被放到了下一页
+
+We need to further explain that $Q_{i}$ is the number of
+vehicles passing through the cross-section $S_{i}$ within
+a certain time, where i = 1,2,3. Because our main
+subject is $Q_{3}$, which relates directly to subsequent
+analysis of the shape, size and merging pattern of
+the departure zone, sub-model 2(the downstream flow
+model) is more complicated than the former. Relatively
+simple as sub-model 1(the upstream flow model) is, it
+still acts as an indispensable tool to help define
+crucial parameters in sub-mode 2.
+
+The first model is determined to simulate the maximum
+flow $Q_{1}$ in the approach, which is also interpreted as
+the vehicle flow under the ``optimal occupancy`` of the
+approach zone. The ``optimal occupancy`` is set to describe
+a critical ratio of real-time cars amount to the maximum
+capacity in the approach zone. If the real-time radio is
+ higher than the critical value, the upstream tends to
+ congest gradually next time. While lower, the situation
+ is defined as a smooth or normal one. In other words,
+
 
 \[
   p_{j}=\begin{cases} 0,&\text{if $j$ is odd}\\
