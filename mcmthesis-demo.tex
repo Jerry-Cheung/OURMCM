@@ -433,7 +433,7 @@ under the purpose of maintaining $o  \approx  o_{cr}$.
 
 The PID system can be expressed as:
 
-  \[q\left( n \right) = K_{p}e\left( {n - 1} \right) + {K_i}\sum_{j=1}^{n-1} e\left( {n - 1} \right)+\frac{d}{dx} \left[ e\left( {n - 1} \right)-e\left( {n - 2} \right)\right]
+  \[q\left( n \right) = K_{p}e\left( {n - 1} \right) + {K_i}\sum_{j=1}^{n-1} e\left( {n - 1} \right)+K_{d}\frac{d}{dx} \left[ e\left( {n - 1} \right)-e\left( {n - 2} \right)\right]
   \]
   \[
   e\left( {n} \right)=\hat{o}\left( {n} \right)-o\left( {n} \right)
@@ -445,12 +445,12 @@ Where,
   \centering
     \begin{tabular}{ll}
       \toprule
-    $n$     & The discrete time index \\
-    $q(n)$  & The controlled entering flow (veh/h) to be implemented in a new time step $n$ \\
+    $n$     & Discrete time index \\
+    $q(n)$  & Dontrolled entering flow (veh/h) to be implemented in a new time step $n$ \\
 
-    $o(n)$ & The measured occupancy of merge area in this time step \\
-    $\hat{o}$ & The desired value of occupancy (can be set as $o_{cr}$) \\
-    $K_{p},K_i,K_d$  & coefficients for the proportional, integral, and derivative terms, always positive \\
+    $o(n)$ & Measured occupancy of merge area in this time step \\
+    $\hat{o}$ & Desired value of occupancy (can be set as $o_{cr}$) \\
+    $K_{p},K_i,K_d$  & Coefficients for the proportional, integral, and derivative terms, always positive \\
     \bottomrule
     \end{tabular}%
   \label{tab:addlabel}%
