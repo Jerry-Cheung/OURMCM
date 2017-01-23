@@ -35,14 +35,12 @@ traffic jam becomes more and more serious but future
 toll-plaza construction opportunities are limited to
 improve this situation markedly. Figure 1 shows the
 congestion in the toll plaza near Tappan Zee Bridge.
-
 \begin{figure}[h]
 \small
 \centering
 \includegraphics[width=10cm]{figure1}
 \caption{Toll Plaza Congestion}\label{fig1}
 \end{figure}
-
 Subject to the constraints referred above, neither
 increasing highway lanes nor building more tollbooths
 seems practical enough to relieve traffic jam around a
@@ -51,34 +49,37 @@ toll plaza nowadays, particularly for some heavily-traveled
  Therefore, looking for some innovative design improvements
   on the geometric parameters of the extent toll plaza
   is an effective solution.
-
-
 \subsection{Restatement of the Problem}
-In this paper, we are required to explore if there is a
-better-than-ever toll plaza model with specific shape,
-size, and merging pattern. In this model, the prerequisite
-is that vehicles fan in from $B$ tollbooth egress lanes down
-to $L$ ($B\textgreater L$) lanes of traffic (i.e., the number of both
-tollbooths and the lanes after merging are fixed). We aim
-to construct a model that can optimize the arrangement
-according to the following conditions.
-
-\begin{itemize}
-\item Enhance the capability of the accident prevention(A).
-\item Maximize the throughput(T).
-\item Minimize the cost of the land and road
-construction(C).
-\end{itemize}
-
-Through our analysis, we determine if there are better
-solutions than any toll plaza in common use. Afterwards,
-the performance of our solution in light and heavy traffic
-and other various situations along with corresponding
-sensitivity analysis is discussed.
-
+In this paper, we are required to explore better
+solutions to design a departure zone of a toll plaza (if they exist).
+We may reach the better solutions with optimal throughput,
+cost or safety by determining its size, shape and merging pattern.
+All the model establishing processes are based on the fixed
+number of tollbooths (B) and the lanes after merging (L).
+From our perspective, connecting all the considerations with cost
+directly or indirectly and make cost our main objective function
+is an explicit and effective plan.
 \subsection{Our Work}
-
+From our perspective, connecting all the considerations
+with cost directly or indirectly and make cost our major
+objective function is an explicit and effective plan. Thus,
+ all our models are established out of this thought.
+In detail, we can determine an average waiting time by
+calculating the throughput of the toll plaza. In this way,
+we may quantify the average waiting time as money consumption
+ with an introduction of a uniform \emph {Waiting Time Cost}. Our goal
+ is to look for the minimum cost (including time and construct cost)
+ in the case of satisfying basic security conditions. In other words,
+ the overall cost is our objective function and security factors
+are constraints towards the objective function. We can get better
+solutions by minimizing the overall cost. And in order to reveal the
+ relationship of size, shape and merging pattern,
+we propose a two-dimensional Cellular Automata (CA) model.After that,
+we analysis the influece of size and shape of toll plaza and with a
+efficient merging control system we proposed a better solution than
+other toll plazas in common.
 \section{Assumptions}
+\begin{itemize}
 \item We assume that all the drivers are selfish and short-sighted.
  To be specific, drivers are free to
  change lanes, in order to get out quickly.
@@ -89,6 +90,7 @@ of vehicles satisfies random distribution.
 \item We assume that all the cars are the same in size.
 \item We assume that the cost of the departure zone only consist of a one-time
 Land and road construction costs.
+\end{itemize}
 \section{Notations}
 
 \section{Model}
