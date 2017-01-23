@@ -41,15 +41,28 @@
 
 
 
-\section{Introduction}
-\section{Assumptions}
-\section{Model 1: T}
+
+\section{Model 1: Two-dimensional Cellular Automata Model}
+\subsection{Introduction}
+In order to discover the influence of size, shape and merging pattern, we
+ propose a two-dimensional Cellular Automata (CA) model. Our model is based on
+ the one-dimensional \emph{Nagel Schreckenberg} model, which was first presented in
+ 1992 and successfully demonstrated many features of the traffic flow.
+
+ Compared with a one-dimensional CA model, a two-dimensional one is more complex
+ but feasible enough to simulate the real traffic flow. Therefore, the results
+ from a two dimensional CA model is relatively more accurate.  Basically,
+ the CA model can be regarded as an effective method to simulate features of
+ traffic jams by showing how interactions between nearby vehicles cause the
+ deceleration.
+\subsection{Assumptions}
+%用项目列表
+
+\subsection{Model Establishing}
+
 \subsection{Simulation and discussion}
-.
-.
-.
-\\
-We simulate a toll plaze with 8 tollbooths and 3 lanes of travel.
+We convert our thoughts and design above into program instructions via Python,
+and simulate a toll plaze with 8 tollbooths and 3 lanes of travel.
 
 Common vehicles are usually $4-4.5m$ long and $1.65-1.85m$ wide,
 so a vehicle will take up 2 cells.
@@ -94,15 +107,22 @@ traffic flow density with different ${p}_{v}$.
 The density in the correspondence with the maximal throughput $q_{max}$ is
 defined as critical density $d_{c}$. We can distinguish that the curves in
 Figure~\ref{fig:q-p} are divided into two sections by that critical density.
-If the flow density is lower than $d_{c}$, it will be a free flow; otherwise,
-a crowded flow.
+If the flow density is lower than $d_{c}$, it will be a free flow (as Figure shows);%注意图片对应
+ otherwise, a crowded flow (as Figure shows).%没写是图几
+%插入两张图片free_flow&crowded_flow
+We can conclude from the simulations above that the RLE are the most crowded
+part once traffic density increases to cause congestion. In this case, drivers
+always consider turning to the RLE as soon as possible, which causes unevenly
+distribution of traffic density in the departure zone.
+
 
 As mentioned above, ${p}_{v}$ is the probability of random deceleration.
 It varies among different drivers. It is not difficult to conclude
 that the smaller the value is, the larger $q_{max}$ is accessible. At the same
 time, $d_{c}$ will increase correspondingly. In the following chapters, we
 choose to adopt ${p}_{v}=0.5$ as our basis, because the $q_{max}$ at this time is
-consistent with the actual value, approximately $700veh/h/lane$.
+is consistent with the actual value, approximately 700 $veh/h/lane$. And more
+detailed simulation results will also be displayed.
 
 
 
