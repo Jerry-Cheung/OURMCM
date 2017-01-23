@@ -71,10 +71,11 @@ WL={W}_{l}L=2\times3=6\\
 
 Figure~\ref{fig:q-p} shows the relationship between current throughput and
 traffic flow density with different ${p}_{v}$.
-%｛翻译｝当流量取得最大值q_max时对应的临界密度{d}_{c}，基本图
-%被临界图划分为两部分，当流量小于临界密度dc时，车流为自由流.
+
+%｛翻译｝当流量取得最大值q_max时对应的临界密度{d}_{c}，zhegetu
+%被临界midu划分为两部分，当流量小于临界密度dc时，车流为自由流.
 %pv是随机减速概率，it varies between different drivers.figure shows that pv越小，对应的
-%capacity 越大，dc也越大。在下面的章节里，我们主要采用了Pv=0.5来讨论，因为这时capacity约为
+%capacity 越大，dc也越大。在下面的章节里，我们主要采用了Pv=0.5来讨论，因为这时capacity约为700
 %veh/h/lane，与实际情况个较为吻合
 
 \begin{figure}[h]
@@ -82,11 +83,22 @@ traffic flow density with different ${p}_{v}$.
 \centering
 \includegraphics[width=12cm]{q-p-difPv.png}
 \caption{The relationship between throughput and density with different ${p}_{v}$}
- \label{fig:q-p}
+\label{fig:q-p}
 
 \end{figure}
 
+The density in the correspondence with the maximal throughput $q_{max}$ is
+defined as critical density $d_{c}$. We can distinguish that the curves in
+Figure~\ref{fig:q-p} are divided into two sections by that critical density.
+If the flow density is lower than $d_{c}$, it will be a free flow; otherwise,
+a crowded flow.
 
+As mentioned above, ${p}_{v}$ is the probability of random deceleration.
+It varies among different drivers. It is not difficult to conclude
+that the smaller the value is, the larger $q_{max}$ is accessible. At the same
+time, $d_{c}$ will increase correspondingly. In the following chapters, we
+adopt ${p}_{v}=0.5$ as our basis, because the $q_{max}$ at this time is
+consistent with the actual value, approximately $700 veh/h/lane$.
 
 
 
