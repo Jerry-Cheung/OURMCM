@@ -88,6 +88,132 @@ sensitivity analysis is discussed.
 
 \section{Size}
 
+The size of the merge area can be determined by
+the following parameters:
+\begin{itemize}
+\item Total width of typical toll lanes ($W_{B}$).
+\item Length of the recovery zone ($L_{r}$).
+\item Length of total departure zone($L_{d}$).
+\item Width of the exit($W_{L}$).
+\end{itemize}
+Parameters hereinbefore are shown in Figure \ref{fig4}.
+\begin{figure}[h]
+\small
+\centering
+\includegraphics[width=10cm]{figure4}
+\caption{The Parameters}\label{fig4}
+\end{figure}
+For the number of travel lanes ($L$) is fixed, $W_{L}$ is
+constant. Then we are considering the effect of the
+rest parameters separately. By simulating our model
+mentioned above via computer program, we can figure
+out how these parameters affect the maximal throughput
+of the merge area, that is, $Q_{max}$.
+Figure \ref{fig5} shows the variation tendency of
+$Q_{max}$ with
+the alteration of the width of each tollbooth $W_{b}$.
+Apparently $W_{B} = B \times W_{b}$. Figure \ref{fig5}
+provides a result
+under the prerequisite that $W_b$ ranges from 6 to 14
+while other parameters are fixed.
+\begin{figure}[h]
+\small
+\centering
+\includegraphics[width=10cm]{figure5}
+\caption{The Linear Fitting Image of $Q_{max}$ and $W_b$}\label{fig5}
+\end{figure}
+We utilize an appropriate Linear Fitting Function Model
+to address the data, and then get the fitting function
+of $Q_{max}$ and $W_b$:
+$$Q_{max}=p_{1}\times W_b+p_2$$
+Where, $$p_1 =10.35, p_2 = 661.7$$
+The simulation result indicates that $Q_{max}$ would only
+be affected by the total width of typical toll lanes
+($W_B$) in a small degree. However, increasing $W_b$ will
+markedly result in a rise in construction costs.
+For $L_r$, the linear fitting image is showed in Figure \ref{fig6}
+and the variance of $Q_{max}$ is 36.7188. We can see that
+$L_r$ causes almost no effect on the merge area capacity.
+In the Linear Fitting Function, the coefficient $p_3=0$.
+\begin{figure}[h]
+\small
+\centering
+\includegraphics[width=10cm]{figure6}
+\caption{The Linear Fitting Image of $Q_{max}$ and $L_r$}\label{fig6}
+\end{figure}
+
+Both linear fitting image, and function of $Q_{max}$ and
+$L_d$ are shown below. There is a negative correlation
+between $Q_{max}$ and $L_d$. Nevertheless, the relationship
+is so faint that enlarging $Q_{max}$ by changing $L_d$ is
+not functional.
+\begin{figure}[h]
+\small
+\centering
+\includegraphics[width=10cm]{figure7}
+\caption{The Linear Fitting Image of $Q_{max}$ and $L_d$}\label{fig7}
+\end{figure}
+
+$${Q_{3max}} = {p_5}\times {L_d} + {p_6}$$
+
+Where, $$p_5 =-0.1248, p_6 = 801.1.$$
+From discussion above, the size does cause impact on
+$Q_{max}$, while the impact is not that obvious.
+In addition, $L_d$ and $W_B$ should never be constructed
+too small because it may cause potential safety
+problems and result in higher accident rate.
+For ensuring safety, the departure taper rates $T_r$
+ must be limited into $[T_{rmin}, T_{rmax}]$. In summary,
+ in order to determine the optimal size of a toll
+ plaza, the problem can be transformed into a linear
+ minimization problem with the form:
+
+ \begin{equation*}
+ \begin{split}
+  {\bf minimize}\quad &$ $C$ = $S$($C_{road}$ + {$C_{construct}$}) + 4380$h_g^2${C_h}({Q_g} - {Q_{\max }})$\\
+   {\bf s.t}\quad  & $$Q_{max}$|W_b = 3m, L_d = 612m, L_r = 168m = 709XL\\
+       & \frac{dQ_{max}}{dW_{b}}=p_{1}=10.35\\
+       & \frac{dQ_{max}}{dL_{r}}=p_{3}=0\\
+       & \frac{dQ_{max}}{dL_{d}}=p_{5}=-0.1248\\
+       & T_{rmin}\textless T_r\textless T_{rmax}\\
+       & W_b\textgreater W_{bmin}\\
+ \end{split}
+ \end{equation*}
+
+Here $W_{bmin}$ signifies the minimal width of the toothbooths, and
+the area of toll plaza
+$$S=13W_b(L_r+0.5L_d)+0.5LW_{L}L_{d}$$
+The departure taper rate
+$$T_r=\frac{L_d}{13W_b-LW_{L}}
+
+For example, there is a toll plaza with three lanes
+and eight tollbooths. To solve the problem, we can
+make assumptions as following:
+\begin{itemize}
+\item The limited speed is 30 km/h.
+\item The lifespan planned reaches to 10 years.
+\item The average daily congestion time $h_g = 1h$.
+\item The average congestion flow $Q_q=2300 veh/h$.
+\item The land price locally $c_{land}=85 USD/m^2$
+\item The cost of highway construction $c_{road}=357 USD/m_2$
+\end{itemize}
+
+According to \emph{1994 Green Book} taper rate for lane
+addition in a 3-lane section ,$T_r$ should arrange from 8
+to 15. Commonly, it takes 1 USD as the cost for each per
+son to wait one hour.
+
+
+On the basis of these conditions, the optimal solution of
+linear programming is
+\begin{align}
+             W_b&=5   \\
+             L_r&=47m \\
+             L_d&=265.5m
+\end{align}
+the total cost  $$C=8,167,645USD$$
+
+
 \section{Shape}
 
 \section{Merging Pattern}
@@ -196,7 +322,7 @@ Where,
 
 In addition, the occupancy measurement should best be
 placed at or just upstream of the location where serious
-vehicle decelerations （congestion） appear first.
+vehicle decelerations (congestion) appear first.
 
 \section{Conclusion}
 
