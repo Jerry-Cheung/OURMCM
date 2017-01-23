@@ -1,0 +1,5 @@
+PWD D:/shuxuejianmo/OURMCM
+INPUT d:/texlive/2016/texmf.cnf
+INPUT d:/texlive/2016/texmf-dist/web2c/texmf.cnf
+INPUT d:/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT ./mcmthesis-demo.tex
