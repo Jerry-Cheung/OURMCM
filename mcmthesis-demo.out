@@ -1,17 +1,23 @@
 \BOOKMARK [1][]{section.1}{Introduction}{}% 1
 \BOOKMARK [2][]{subsection.1.1}{Background}{section.1}% 2
 \BOOKMARK [2][]{subsection.1.2}{Restatement of the Problem}{section.1}% 3
-\BOOKMARK [1][]{section.2}{Notations}{}% 4
-\BOOKMARK [1][]{section.3}{Model 1: The Traffic Throughput Model}{}% 5
-\BOOKMARK [2][]{subsection.3.1}{Overview}{section.3}% 6
-\BOOKMARK [1][]{section.4}{Calculating and Simplifying the Model }{}% 7
-\BOOKMARK [1][]{section.5}{The Model Results}{}% 8
-\BOOKMARK [1][]{section.6}{Validating the Model}{}% 9
-\BOOKMARK [1][]{section.7}{Conclusions}{}% 10
-\BOOKMARK [1][]{section.8}{A Summary}{}% 11
-\BOOKMARK [1][]{section.9}{Evaluate of the Mode}{}% 12
-\BOOKMARK [1][]{section.10}{Strengths and weaknesses}{}% 13
-\BOOKMARK [2][]{subsection.10.1}{Strengths}{section.10}% 14
-\BOOKMARK [1][]{section*.2}{Appendices}{}% 15
-\BOOKMARK [1][]{Appendix.a.A}{Appendix First appendix}{}% 16
-\BOOKMARK [1][]{Appendix.a.B}{Appendix Second appendix}{}% 17
+\BOOKMARK [2][]{subsection.1.3}{Our Work}{section.1}% 4
+\BOOKMARK [1][]{section.2}{Assumptions}{}% 5
+\BOOKMARK [1][]{section.3}{Notations}{}% 6
+\BOOKMARK [1][]{section.4}{Model}{}% 7
+\BOOKMARK [2][]{subsection.4.1}{Time Cost and Construction Cost}{section.4}% 8
+\BOOKMARK [2][]{subsection.4.2}{CA Model}{section.4}% 9
+\BOOKMARK [1][]{section.5}{Size}{}% 10
+\BOOKMARK [1][]{section.6}{Shape}{}% 11
+\BOOKMARK [1][]{section.7}{Merging Pattern}{}% 12
+\BOOKMARK [1][]{section.8}{Conclusion}{}% 13
+\BOOKMARK [1][]{section.9}{Sensitivity Analysis}{}% 14
+\BOOKMARK [2][]{subsection.9.1}{The Performance of Our Solution in Light and Heavy Traffic}{section.9}% 15
+\BOOKMARK [2][]{subsection.9.2}{Autonomous Vehicles}{section.9}% 16
+\BOOKMARK [2][]{subsection.9.3}{The Proportions of Different Tollbooths}{section.9}% 17
+\BOOKMARK [1][]{section.10}{Strengths and Weaknesses}{}% 18
+\BOOKMARK [2][]{subsection.10.1}{Strengths}{section.10}% 19
+\BOOKMARK [2][]{subsection.10.2}{Weaknesses}{section.10}% 20
+\BOOKMARK [1][]{section*.2}{Appendices}{}% 21
+\BOOKMARK [1][]{Appendix.a.A}{Appendix First appendix}{}% 22
+\BOOKMARK [1][]{Appendix.a.B}{Appendix Second appendix}{}% 23
