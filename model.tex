@@ -49,28 +49,29 @@
 .
 .
 \\
-We simulate a toll plaze with 8 tollbooths and 3 lanes.
+We simulate a toll plaze with 8 tollbooths and 3 lanes of travel.
 
-Commen cars are with  length of 4-4.5m and width of 1.65-1.85m,
-so a car will take up 2 cells.
-According to the 1994 Green Book,a fit solution of
- the plaze would be a trapezoid with
-168 meters of recovery zone length and 612 meters of departure zone.
-The width of one tollbooth and toll island
-is usually 5.5 meters and the width of each lane is 3.5-4 meter
-We set the length of each cell equal to 2 meter: ${l}_{car}=0.5(m)$.
+Common vehicles are usually $4-4.5m$ long and $1.65-1.85m$ wide,
+so a vehicle will take up 2 cells.
+According to the \emph{Green Book, 1994}, an appropriate design of
+a toll plaze would be a trapezoid with a
+168-meter-long recovery zone and a 612-meter-long departure zone.
+The width of a tollbooth along with a toll island
+is usually $5.5m$, while that of each lane is $3.5-4m$.
+We set the length of each cell equal to $2m$: $l_{car}=4m$.
 So the parameters are as follows:
 \[
-{l}_{car}=2\\
-{w}_{car}=1\\
+{l}_{veh}=2\\
+{w}_{veh}=1\\
 WB={W}_{b}B=3\times8=24\\
 WL={W}_{l}L=2\times3=6\\
 {L}_{r}=84\\
 {L}_{d}=306\\
 \]
 
-Figure~\ref{fig:q-p} shows the relationship between current and density of cars in
-road with different ${p}_{v}$. %｛翻译｝当流量取得最大值q_max时对应的临界密度{d}_{c}，基本图
+Figure~\ref{fig:q-p} shows the relationship between current throughput and
+traffic flow density with different ${p}_{v}$.
+%｛翻译｝当流量取得最大值q_max时对应的临界密度{d}_{c}，基本图
 %被临界图划分为两部分，当流量小于临界密度dc时，车流为自由流.
 %pv是随机减速概率，it varies between different drivers.figure shows that pv越小，对应的
 %capacity 越大，dc也越大。在下面的章节里，我们主要采用了Pv=0.5来讨论，因为这时capacity约为
@@ -79,7 +80,7 @@ road with different ${p}_{v}$. %｛翻译｝当流量取得最大值q_max时对�
 \begin{figure}[h]
 \small
 \centering
-%\includegraphics[width=12cm]{q-p-difPv.png}
+\includegraphics[width=12cm]{q-p-difPv.png}
 \caption{The relationship between throughput and density with different ${p}_{v}$}
  \label{fig:q-p}
 
